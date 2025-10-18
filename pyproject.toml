@@ -1,0 +1,14 @@
+[project]
+name = "quick-cl"
+version = "0.1.0"
+description = "Find the maximum cl for airfoils in UIUC database."
+readme = "README.md"
+requires-python = ">=3.12.0"
+dependencies = [
+    "ipykernel>=7.0.1",
+    "numpy>=2.3.4",
+    "xfoil",
+]
+
+[tool.uv.sources]
+xfoil = { git = "https://github.com/DARcorporation/xfoil-python.git" }
